@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Casting Guard | Industrial Defect Detection</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/static/style.css">
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+    <!-- Premium Industrial Background -->
+    <img src="/static/industrial_ai_casting_background_1777051778365.png" class="hero-bg" alt="">
+
+    <div class="app-container">
+        <header class="main-header">
+            <div class="logo-container">
+                <div class="logo-glow">
+                    <i data-lucide="shield-check" size="48"></i>
+                </div>
+            </div>
+            <h1>AI Casting Guard</h1>
+            <p class="subtitle">Next-generation industrial quality assurance powered by multi-model deep learning analysis.</p>
+        </header>
+
+        <main class="main-content">
+            <!-- Inspection Card -->
+            <section class="card">
+                <h3 class="card-title">
+                    <i data-lucide="scan-eye"></i>
+                    Product Inspection
+                </h3>
+                
+                <div class="upload-zone" id="dropZone">
+                    <input type="file" id="fileInput" accept="image/*" hidden>
+                    
+                    <div class="upload-placeholder" id="uploadPlaceholder">
+                        <i data-lucide="upload-cloud"></i>
+                        <p>Drop casting image or <span>Browse</span></p>
+                        <small style="color: var(--text-dim)">Supported: JPEG, PNG (Industrial Grade)</small>
+                    </div>
+
+                    <div class="preview-wrapper hidden" id="previewContainer">
+                        <div class="scan-line" id="scanLine"></div>
+                        <img id="imagePreview" src="" alt="Industrial Preview">
+                        <button class="remove-btn" id="removeImage">
+                            <i data-lucide="x"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="actions">
+                    <button id="analyzeBtn" class="btn btn-primary" disabled>
+                        <i data-lucide="cpu"></i>
+                        Initiate Multi-Model Analysis
+                    </button>
+                </div>
+            </section>
+
+            <!-- Results Section -->
+            <section id="resultsSection" class="hidden">
+                <div class="results-header">
+                    <h3 class="card-title" style="margin-bottom: 0">
+                        <i data-lucide="activity"></i>
+                        Analysis Breakdown
+                    </h3>
+                    <button class="btn btn-secondary" style="width: auto; margin-top: 0; padding: 0.5rem 1rem;" onclick="resetApp()">
+                        <i data-lucide="rotate-ccw" size="18"></i>
+                        Reset
+                    </button>
+                </div>
+
+                <div class="results-grid" id="resultsBody">
+                    <!-- Cards will be injected here -->
+                </div>
+            </section>
+        </main>
+
+        <footer style="margin-top: 4rem; text-align: center; color: var(--text-dim); font-size: 0.9rem;">
+            <p>&copy; 2024 AI Casting Guard • Industrial AI Solutions</p>
+        </footer>
+    </div>
+
+    <!-- Loading State -->
+    <div id="loadingOverlay" class="loading-overlay hidden">
+        <div class="loader"></div>
+        <h2 style="font-weight: 800; letter-spacing: 2px;">ANALYZING</h2>
+        <p class="loading-dots">Consulting CNN, MobileNet, and ResNet models</p>
+    </div>
+
+    <script src="/static/script.js"></script>
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+</html>

@@ -1,0 +1,14 @@
+{
+  "img_size": 224,
+  "class_names": [
+    "blowhole",
+    "crack",
+    "flash",
+    "normal"
+  ],
+  "models": {
+    "Custom CNN": "model\\custom_cnn.keras",
+    "MobileNet": "model\\mobilenet.keras",
+    "ResNet": "model\\resnet.keras"
+  }
+}
