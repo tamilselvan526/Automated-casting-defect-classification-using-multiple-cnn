@@ -1,6 +1,8 @@
-# AI Casting Guard: Industrial Defect Classification System
+# AI Casting Guard: Automated Casting Defect Classification using Multiple CNN
 
-AI Casting Guard is a high-performance deep learning system designed for real-time industrial quality control. It classifies casting products into various defect categories (or "Normal") using multiple state-of-the-art Convolutional Neural Network (CNN) architectures.
+Developed a deep learning system using multiple CNN models to detect and classify casting defects from industrial images. Implemented preprocessing, training, and evaluation to improve accuracy, enabling efficient and reliable automated quality inspection in manufacturing.
+
+AI Casting Guard is a high-performance system designed for real-time industrial quality control. It compares results across multiple state-of-the-art architectures.
 
 ## 🚀 Features
 - **Multi-Model Analysis**: Compares results across three optimized architectures:
@@ -28,8 +30,8 @@ The models are trained on the **Real-life Industrial Dataset of Casting Product*
 
 1. **Clone the repository**:
    ```bash
-   git clone https://github.com/YourUsername/Casting_Defect_Project.git
-   cd Casting_Defect_Project
+   git clone https://github.com/tamilselvan526/Automated-casting-defect-classification-using-multiple-cnn.git
+   cd Automated-casting-defect-classification-using-multiple-cnn
    ```
 
 2. **Set up Virtual Environment**:
